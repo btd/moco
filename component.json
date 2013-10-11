@@ -1,0 +1,11 @@
+{
+    "name": "moco",
+    "description": "Small idiomatic es5 model and collection.",
+    "keywords": ["model", "collection", "es5"],
+    "dependencies": {
+        "component/emitter": "*"
+    },
+    "version": "0.0.1",
+    "scripts": ["index.js"],
+    "license": "MIT"
+}
