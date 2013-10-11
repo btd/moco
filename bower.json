@@ -1,0 +1,26 @@
+{
+  "name": "moco",
+  "main": "index.js",
+  "version": "0.0.1",
+  "authors": [
+    "Denis Bardadym <bardadymchik@gmail.com>"
+  ],
+  "description": "Small idiomatic es5 model and collection.",
+  "keywords": [
+    "model",
+    "collection",
+    "es5"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/btd/moco",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "coverage"
+  ],
+  "dependencies": {
+    "emitter": "component/emitter#master"
+  }
+}
