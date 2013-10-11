@@ -127,6 +127,23 @@ users.forEach(function(user) {
 // lisa@example.com
 ```
 
+## Collection plugins
+
+There are 3 built in collection plugins:
+
+### collection.byId
+
+It create internal cache for primary attribute of models it contains and add methods `#byId(primary)` and `#removeById(primary)`.
+Nothing in this plugin checks that collection contains 2 model with the same primary attribute.
+
+### collection.byField(attr)
+
+It create internal cache for specified attribute and add method `#by[Attr](attr)` [Attr] there it is name with capital letter.
+
+### collection.modelsChanges
+
+It add ability to collection emit `change` event when nested model changed.
+
 ## License
 
 The MIT License (MIT)
