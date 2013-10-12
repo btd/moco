@@ -144,6 +144,39 @@ It create internal cache for specified attribute and add method `#by[Attr](attr)
 
 It add ability to collection emit `change` event when nested model changed.
 
+### model.nestedObjects
+
+It emit change event every time nested model or collection changed. It can works together with `collection.modelsChanges` and proxy these events too.
+
+Small example:
+
+```javascript
+var NestedModel1 = moco.model()
+    .attr('a');
+
+var NestedCollection = moco.collection(NestedModel1)
+    .use(moco.collection.modelsChanges);
+
+var NestedModel2 = moco.model()
+    .attr('a', { model: NestedModel1 })
+    .attr('b', { collection: NestedCollection })
+    .use(moco.model.nestedObjects);
+
+var nm = new NestedModel1({ a: 'a' });
+
+var c = new NestedCollection([ nm ]);
+
+var m = new NestedModel2({ b: c });
+
+/*
+    this will emit 4 events on m:
+    change:b.a with value 'b' and prev 'a'
+    change:b with value === prev === c
+    change with previous 2 events
+*/
+nm.a = 'b';
+```
+
 ## License
 
 The MIT License (MIT)

@@ -1,7 +1,12 @@
 exports.model = require('./lib/model');
 exports.collection = require('./lib/collection');
 
-var util = require('./lib/collection/util');
-for(var m in util) {
-    exports.collection[m] = util[m];
+var collectionUtil = require('./lib/collection/util');
+for(var m in collectionUtil) {
+    exports.collection[m] = collectionUtil[m];
+}
+
+var modelUtil = require('./lib/model/util');
+for(var m in modelUtil) {
+    exports.model[m] = modelUtil[m];
 }
