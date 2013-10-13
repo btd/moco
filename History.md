@@ -1,3 +1,8 @@
+0.0.4 / 2013-10-13
+==================
+
+ * Small performance improvement for large models
+
 0.0.3 / 2013-10-12
 ==================
 
