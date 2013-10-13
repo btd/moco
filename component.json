@@ -6,6 +6,13 @@
         "component/emitter": "*"
     },
     "version": "0.0.3",
-    "scripts": ["index.js"],
+    "scripts": [
+        "index.js",
+        "lib/collection.js",
+        "lib/model.js",
+        "lib/collection/array.js",
+        "lib/collection/util.js",
+        "lib/model/util.js"
+    ],
     "license": "MIT"
 }
