@@ -1,3 +1,8 @@
+0.0.5 / 2013-10-22
+==================
+
+ * Fix bug when in collection by field plugin cached field changed.
+
 0.0.4 / 2013-10-13
 ==================
 
