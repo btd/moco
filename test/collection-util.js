@@ -60,7 +60,24 @@ describe('Collection Utils', function () {
             c.splice(1, 1);
 
             should(c.byA(m.a)).not.ok;
-        })
+        });
+
+        it('should allow to retrieve by field value even after field changed', function() {
+            var m = new M({ a: 1 });
+            var c = new C1([
+              { a: 2 },
+              m,
+              { a: 4 }
+            ]);
+
+            m.a = 10;
+
+            c.byA(m.a).should.be.exactly(m);
+
+            c.splice(1, 1);
+
+            should(c.byA(m.a)).not.ok;
+        });
     });
 
     describe('.modelsChanges', function() {
