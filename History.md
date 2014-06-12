@@ -1,3 +1,13 @@
+1.0.0 / 2014-05-31
+==================
+
+ * Added 'set' option to attribute options to define preprocessing
+ * Breaking change: When model attribute assigned undefined value it will try to replace it with default
+ * Breaking change: Attibute options 'model' and 'collection' replaced with just 'type'
+ * Added possiblity to handle wrapper types
+ * Added more fast toJSON
+ * Added .set method for models
+
 0.0.5 / 2013-10-22
 ==================
 

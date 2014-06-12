@@ -21,11 +21,13 @@
     "url": "https://github.com/btd/moco/issues"
   },
   "devDependencies": {
-    "should": "~2.0.2",
-    "mocha": "~1.13.0",
-    "istanbul": "~0.1.44"
+    "should": "latest",
+    "mocha": "latest",
+    "istanbul": "latest",
+    "mocha-better-spec-reporter": "0.0.2",
+    "lodash": "^2.4.1"
   },
   "dependencies": {
-    "emitter-component": "~1.0.1"
+    "emitter-component": "^1.1.1"
   }
 }

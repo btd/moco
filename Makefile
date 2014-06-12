@@ -1,4 +1,4 @@
-REPORTER = spec
+REPORTER = mocha-better-spec-reporter
 MOCHA_OPTS= ./test
 
 test:

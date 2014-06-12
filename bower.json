@@ -1,7 +1,7 @@
 {
   "name": "moco",
   "main": "index.js",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "authors": [
     "Denis Bardadym <bardadymchik@gmail.com>"
   ],
@@ -21,6 +21,6 @@
     "coverage"
   ],
   "dependencies": {
-    "emitter": "component/emitter#master"
+    "emitter": "component/emitter#1.1.2"
   }
 }
