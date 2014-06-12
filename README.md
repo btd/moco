@@ -22,12 +22,12 @@ Api exports just 2 functions: `model` and `collection`.
 var model = require('moco').model;
 
 var User = model()
-	.attr('_id', { primary: true }) // this attribute will be used as primary key
-    .attr('name') // just simple attribute
-    .attr('email', { get: function() {
- 		return this.name + '@example.com';
-    } }) // this is a getter and it called each time you try access this model
-    .attr('title', { default: 'Unknow' })// this will be used to fill undefined attribute while creation
+  .attr('_id', { primary: true }) // this attribute will be used as primary key
+  .attr('name') // just simple attribute
+  .attr('email', { get: function() {
+    return this.name + '@example.com';
+  }}) // this is a getter and it called each time you try access this model
+  .attr('title', { default: 'Unknow' })// this will be used to fill undefined attribute while creation
     
 var u1 = new User({ _id: 1, name: 'den'});
 console.log(u1._id); // 1
@@ -158,8 +158,8 @@ var NestedCollection = moco.collection(NestedModel1)
     .use(moco.collection.modelsChanges);
 
 var NestedModel2 = moco.model()
-    .attr('a', { model: NestedModel1 })
-    .attr('b', { collection: NestedCollection })
+    .attr('a', { type: NestedModel1 })
+    .attr('b', { type: NestedCollection })
     .use(moco.model.nestedObjects);
 
 var nm = new NestedModel1({ a: 'a' });

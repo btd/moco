@@ -1,6 +1,6 @@
 {
   "name": "moco",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Small idiomatic es5 model and collection.",
   "main": "index.js",
   "scripts": {
