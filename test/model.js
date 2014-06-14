@@ -12,14 +12,14 @@ describe('Model', function() {
     var a = { a: 1, b: 'b', c: 'c' };
     var m = new M(a);
 
-    m.should.include(a);
+    m.should.containEql(a);
   });
 
   it('should be able to assign attributes by =', function() {
     var m = new M();
     m.a = 'a';
 
-    m.a.should.include('a');
+    m.a.should.containEql('a');
   });
 
   it('should not be able to save values that we do not define', function() {
@@ -44,7 +44,7 @@ describe('Model', function() {
 
     var m = new M1({ a: 'a' });
 
-    m.should.include({ a: 'a', b: 'b' });
+    m.should.containEql({ a: 'a', b: 'b' });
   });
 
   it('should attributes should save references', function() {
