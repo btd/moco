@@ -1,3 +1,8 @@
+1.0.2 / 2014-06-14
+==================
+
+ * Fix bug with wrapping nulls in .nestedObjects
+
 1.0.1 / 2014-06-14
 ==================
 
