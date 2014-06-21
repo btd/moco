@@ -1,3 +1,9 @@
+1.0.3 / 2014-06-21
+==================
+
+ * Fix for collection 'change' event on 'add' and 'remove'
+ * Improve support of wrappers
+
 1.0.2 / 2014-06-14
 ==================
 
